@@ -13,6 +13,7 @@ namespace XNAtut
 {
     /// <summary>
     /// This is the main type for your game
+    /// this project is to follow a tutorial on XNA Development
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
