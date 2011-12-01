@@ -1,0 +1,8 @@
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\bin\x86\Debug\XNAtut.exe
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\bin\x86\Debug\XNAtut.pdb
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\obj\x86\Debug\XNAtut.exe
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\obj\x86\Debug\XNAtut.pdb
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\bin\x86\Debug\Content\Backgrounds\bglayer.xnb
+C:\Users\cgriffin\documents\visual studio 2010\Projects\XNAtut\XNAtut\XNAtut\bin\x86\Debug\Content\Levels\0.txt

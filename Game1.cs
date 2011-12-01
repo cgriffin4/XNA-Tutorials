@@ -1,6 +1,6 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -17,8 +17,14 @@ namespace XNAtut
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        //Drawing
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        //Level
+        private int levelIndex = 0;
+        private Level level;
+        private int numberOfLevels = 1;
 
         public Game1()
         {
@@ -49,6 +55,7 @@ namespace XNAtut
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            LoadNextLeve();
         }
 
         /// <summary>
@@ -85,8 +92,28 @@ namespace XNAtut
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            level.Draw(gameTime, spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void LoadNextLeve()
+        {
+            //Get the next index
+            levelIndex = (levelIndex + 1) % numberOfLevels;
+
+            //Unload the previous level
+            if (level != null)
+            {
+                level.Dispose();
+            }
+
+            //Load the level
+            string levelPath = string.Format("Content/Levels/0.txt",levelIndex);
+            using (Stream filestream = TitleContainer.OpenStream(levelPath))
+                level = new Level(Services, filestream, levelIndex);
         }
     }
 }
